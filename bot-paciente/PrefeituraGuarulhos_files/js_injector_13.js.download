@@ -1,0 +1,24 @@
+document.write('<script type="text/javascript" src="http://www.guarulhos.sp.gov.br/sites/all/libraries/maskedinput/maskedinpt.js"></script>');
+jQuery(function($) { 
+      
+   
+   $("#edit-field-validade-und-0-value").mask("99/99/9999");
+$('#edit-field-cep-linc-und-0-value').mask("99999-999");
+
+jQuery("#edit-field-telefone-und-0-value")
+        .mask("(99) 9999-9999?9")
+        .focusout(function (event) {  
+            var target, phone, element;  
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
+            phone = target.value.replace(/\D/g, '');
+            element = $(target);  
+            element.unmask();  
+            if(phone.length > 10) {  
+                element.mask("(99) 99999-999?9");  
+            } else {  
+                element.mask("(99) 9999-9999?9");  
+            }  
+        });
+
+
+});

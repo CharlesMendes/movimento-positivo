@@ -1,0 +1,28 @@
+jQuery(document).ready(function($) { 
+
+
+$( "#edit-title" ).attr( "maxlength", "90" );
+
+//$("#edit-title").maxlength();
+$('#servicos_menu').click(function(){return false;});
+$('#servicos_cid_emp').click(function(){return false;});
+//$('#servicos_menu').click(function(){return false;});
+//$('#servicos_menu').click(function(){return false;});
+//$('#servicos_menu').click(function(){return false;});
+//$('#servicos_menu').click(function(){return false;});
+
+/*$('#edit-field-chamada-da-home-und-0-value').keyup(function() {
+     var tamanho = $(this).val().length;
+console.log(tamanho);
+     if (tamanho!==0) { 
+		if (tamanho >= 5)  {
+console.log('tamanho atual:' + tamanho);
+                   $(this).val(   $(this).val().substring(0,4)                ) ;
+console.log($(this).val().substring(0,4));
+		}
+     }
+
+});*/
+
+
+});

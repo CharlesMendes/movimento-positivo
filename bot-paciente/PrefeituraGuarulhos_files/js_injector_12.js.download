@@ -1,0 +1,15 @@
+jQuery(document).ready(function($) { 
+
+
+$('.ts_increase_variable').click(function(){
+
+
+});
+
+
+
+// esse jquery altera valor - Any -  
+$('select#edit-type-1 option:eq(0)').text("Selecione...");
+
+$('select#edit-field-secretaria-value option:eq(0)').text("Selecione...");
+});

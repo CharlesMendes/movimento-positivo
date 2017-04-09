@@ -1,0 +1,22 @@
+jQuery(document).ready(function($) { 
+
+var tam = $(window).width();
+
+   if ((tam  >950) && (tam< 1200 )){
+ $( "#block-views-videos-home-block-1" ).removeClass( "bloco_videos" );
+$( "#block-views-videos-home-block-1" ).addClass( "bloco2_videos" );
+$("block-block-42").css("margin-top", "margin-top: 10px");
+    
+   }else if (tam  <= 950){
+  $( "#block-views-videos-home-block-1" ).removeClass( "bloco2_videos" );
+$( "#block-views-videos-home-block-1" ).addClass( "bloco3_videos" );
+//$( "#block-block-42").removeClass("bloco_diario");
+
+
+   } 
+
+   
+$('.videos-home').eq(0).css('padding-right', '12px');
+ 
+$('.videos-home').eq(1).css('padding-left', '8px');
+});

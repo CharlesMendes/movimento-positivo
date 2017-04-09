@@ -1,0 +1,28 @@
+jQuery(document).ready(function($) { 
+    $('.btn-primary').click(function(){
+        if ($('#edit-search-block-form--2').val() == ''){
+           $('#edit-search-block-form--2').css('border', 'solid 2px red');
+           alert("Preencha o campo para realizar a pesquisa");
+           return false;
+        }
+    });
+
+   $('#edit-submit--2').click(function() {
+     if ($('#edit-name').val() == ''){
+        $('#edit-name').css('border', 'solid 2px red')
+        alert("Preencha o campo de login");
+        return false
+     }
+    if ($('#edit-pass').val() == ""){
+        $('#edit-pass').css('border', 'solid 2px red');
+        alert("Preencha o campo de login");
+        return false
+    }
+   });
+
+   $('#edit-search-block-form--2').click(function() {
+      $('#edit-title-counter').next().hide();
+      $('#edit-field-chamada-da-home-und-0-value-counter').next().hide();
+   })
+});
+ 

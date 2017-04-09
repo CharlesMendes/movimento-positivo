@@ -1,0 +1,6 @@
+jQuery(document).ready(function($) { 
+ 
+$("#edit-name").attr("placeholder", "Usuário");
+
+$("#edit-pass").attr("placeholder", "Senha");
+});
